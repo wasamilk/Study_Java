@@ -1,0 +1,7 @@
+
+
+# from other repository...
+/target/*
+/bin/*
+/data/*
+/.settings/
