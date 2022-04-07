@@ -1,0 +1,21 @@
+
+	<< String >>
+	
+		- new String() : 힙메모리에 인스턴스로 생성
+			String str1 = new String("abc")
+			String str2 = new String("abc")
+			str1==str2  -> false
+		
+		- 상수풀에서 갖다쓰는것. 
+			String str3 = "abc"; 
+			String str4 = "abc"; 
+			str3==str4  -> true
+		
+		
+	<< StringBuilder, StringBuffer >>
+		- 내부적으로 가변적인 char[]를 멤버 변수로 가짐
+		- 문자열 여러번 연결이나 변경할 때 사용하면 유용
+		- 새로운 인스턴스 생성하지 않고 char[]를 변경함
+		- StringBuffer는 멀티 쓰레드 프로그래밍에서 동기화(synchronization)을 보장
+		- 단일 쓰레드 프로그램에서는 StringBuilder 사용을 권장
+		- toString() 메서드로 String 반환
