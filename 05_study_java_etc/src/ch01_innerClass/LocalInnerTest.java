@@ -16,7 +16,7 @@ class Outer {
 			@Override
 			public void run() {
 				// run()이 다시 호출되었을 경우, num과 i는 getRunnable()의 지역변수여서 사라지고 없어서
-				// 
+				/// ...?
 				// num = 200; //에러 남. 지역변수는 상수로 바뀜
 				// i = 100;   //에러 남. 매개 변수 역시 지역변수처럼 상수로 바뀜
 				System.out.println("i =" + i);
