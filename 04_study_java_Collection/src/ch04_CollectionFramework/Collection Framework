@@ -1,0 +1,54 @@
+
+	<< Collection Framework >>
+	- 프로그램 구현에 필요한 자료구조를 구현해 놓은 JDK 라이브러리
+	- 크게 Collection과 Map 인터페이스 2가지로 나뉨
+	
+		< Collection 인터페이스 >
+			- List (순서)
+				- ArrayList
+			- Set (유일한)
+				- HashSet
+				- TreeSet(중복없는 정렬)
+						- 객체의 정렬에 사용하는 클래스
+						- Set 인터페이스를 구현하여 중복을 허용하지 않고, 오름차순이나 내림차순으로 객체를 정렬할 수 있음
+						- 내부적으로 이진검색트리(binary search tree)로 구현됨
+						- 이진검색트리에 저장하기 위해 각 객체를 비교해야 함
+						- 비교 대상이 되는 객체에 Comparable이나 Comparator 인터페이스를 구현 해야 TreeSet에 추가 될 수 있음
+		
+		< Map 인터페이스 >
+			: key(Set, 중복x)와 value(Collection)
+			- HashTable
+			- HashMap
+				
+			- TreeMap
+	
+	
+
+	<< Collection 관련 클래스 >>
+	
+		< Iterator >
+		- Collection 요소를 순회하는 Iterator	
+		- 요소의 순회?
+			: 컬렉션 프레임워크에 저장된 요소들을 하나씩 차례로 참조하는 것
+			  순서가 있는 List인터페이스의 경우는 Iterator를 사용 하지 않고 get(i) 메서드를 활용할 수 있음
+			  Set 인터페이스의 경우 get(i) 메서드가 제공되지 않으므로 Iterator를 활용하여 객체를 순회함
+			  
+		- Iterator 사용하기
+			
+			ex) Iterator<Member> ir = arrayList.iterator();
+			
+			: boolean hasNext() : 이후에 요소가 더 있는지를 체크하는 메서드,, 요소가 있다면 true를 반환
+			  E next() : 다음에 있는 요소를 반환
+	
+		< Comparable & Comparator > 
+		- String, Integer등 JDK의 많은 클래스들이 이미 Comparable을 구현했음
+		
+		- Interface Comparable<T>
+			: int compareTo(T t)
+			  -> 내가 크면 양수, 내가 작으면 음수, 같으면 0 반환, treeSet add시 비교를 위해 자동호출됨.
+		- Interface Comparator<T>
+			: int compare(T o1, T o2)
+			  -> 1번째가 크면 양수, 1번째가 작으면 음수, 같으면 0 반환, Comparable.compareTo()와 다르게 파라미터가 2개
+			  ********** Set<String> set = new TreeSet<String>(new MyCompare()); 이처럼 Comparator구현한 클래스를 적어줘야한다 ***********
+		
+		

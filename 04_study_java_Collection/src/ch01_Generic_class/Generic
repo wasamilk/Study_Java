@@ -1,0 +1,10 @@
+	
+	Generic(제네릭) : 해당 클래스를 사용하는 시점에 실제 사용할 자료형을 지정, static 변수는 사용할 수 없음
+	
+	T - type parameter  
+	E - element
+	K - key
+	V - value
+	
+	다이아몬드 연산자 <>
+	- ArrayList list = new ArrayList<>();  : 다이아몬드 연산자 내부에서 자료형은 생략가능 
