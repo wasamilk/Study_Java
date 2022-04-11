@@ -1,0 +1,14 @@
+4월 11, 2022 9:11:04 오후 ch09_Logger.MyLogger log
+가장 미세: test
+4월 11, 2022 9:11:04 오후 ch09_Logger.MyLogger log
+보다 미세: test
+4월 11, 2022 9:11:04 오후 ch09_Logger.MyLogger log
+미세: test
+4월 11, 2022 9:11:04 오후 ch09_Logger.MyLogger log
+구성: test
+4월 11, 2022 9:11:04 오후 ch09_Logger.MyLogger log
+정보: test
+4월 11, 2022 9:11:04 오후 ch09_Logger.MyLogger log
+경고: test
+4월 11, 2022 9:11:04 오후 ch09_Logger.MyLogger log
+심각: test

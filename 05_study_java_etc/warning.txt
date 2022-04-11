@@ -1,0 +1,4 @@
+4월 11, 2022 9:11:04 오후 ch09_Logger.MyLogger log
+경고: test
+4월 11, 2022 9:11:04 오후 ch09_Logger.MyLogger log
+심각: test
