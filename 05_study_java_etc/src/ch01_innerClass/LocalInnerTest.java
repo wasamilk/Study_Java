@@ -8,8 +8,10 @@ class Outer {
 	Runnable getRunnable(int i) {
 
 		int num = 100;
-
-		class MyRunnable implements Runnable {
+		
+		// 지역 내부 클래스(local inner class) 클래스의 지역변수화..
+		// 이것의 이름을 없앤것이 익명내부클래스이다.
+		class MyRunnable implements Runnable { 
 
 			int localNum = 10;
 
